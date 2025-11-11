@@ -21,3 +21,4 @@ I am a full stack developer with a keen interest in mobile app development using
 
 ## Contact Me
 - **Email:** [mahederegezaheng@gmail.com](mailto:mahederegezaheng@gmail.com)
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&locale=en" alt="mahederegezahegn" /></p>
