@@ -1,24 +1,45 @@
-# Hi, I'm Mahedere Gezaheng 👋
+Hi, I'm Mahedere Gezaheng 👋
+About Me
 
-## About Me
-I am a full stack developer with a keen interest in mobile app development using Flutter, web app development with Laravel and React using Inertia, and front-end development.
+I am a full stack developer with a passion for building web and mobile applications. I enjoy creating solutions with Flutter, Laravel, React, and Inertia, focusing on clean architecture, user-friendly interfaces, and efficient backend systems.
 
-## Technologies & Tools
-- **Languages:** PHP, Dart, JavaScript, HTML, CSS
-- **Frameworks:** Laravel, Flutter, React, Inertia
-- **Tools:** Git, Docker, Composer, npm
+💻 Specialties: Web apps, Mobile apps, Front-end design
 
-## Projects
-### Book Apps
-- **Book App 1:** Connected to Firebase and Google Auth.
-- **Book App 2:** For a client, using Laravel backend with an integrated payment system.
+🌱 Currently learning: Advanced Flutter state management, real-time web apps with Laravel & React
 
-### Client Projects
-- **View App:** Developed for a client.
-- **Customer Relationship Management System:** Built for managing customer relationships.
-- **Employee Evaluation System:** Created for employee performance evaluations.
-- **Dental Clinic Management System:** Collaborated on a management system for a dental clinic.
+⚡ Fun fact: I love turning complex problems into elegant code.
 
-## Contact Me
-- **Email:** [mahederegezaheng@gmail.com](mailto:mahederegezaheng@gmail.com)
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&locale=en" alt="mahederegezahegn" /></p>
+🛠 Technologies & Tools
+
+Languages: PHP, Dart, JavaScript, HTML, CSS
+
+Frameworks & Libraries: Laravel, Flutter, React, Inertia.js
+
+Tools & Platforms: Git, Docker, Composer, npm, Firebase
+
+🏆 Projects
+Book Apps
+
+Book App 1: Mobile app connected to Firebase with Google Authentication.
+
+Book App 2: Client project using Laravel backend with integrated payment system.
+
+Client Projects
+
+View App: Custom web application developed for a client.
+
+CRM System: Built a Customer Relationship Management System to optimize client interactions.
+
+Employee Evaluation System: Managed employee performance tracking and evaluations.
+
+Dental Clinic Management System: Developed and maintained a clinic management platform.
+
+📫 Contact Me
+
+Email: mahederegezaheng@gmail.com
+
+LinkedIn: linkedin.com/in/mahedere-gezaheng
+ (optional if you want to add it)
+
+📊 GitHub Stats
+<p align="center"> <img align="center" src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&locale=en" alt="mahederegezahegn" /> </p>
