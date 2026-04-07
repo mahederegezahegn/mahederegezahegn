@@ -1,393 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Mahedere Gezahegn's Dev Profile</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+<div align="center">
   
-  :root {
-    --primary: #00dc82;
-    --secondary: #61dafb;
-    --accent: #2496ed;
-    --dark: #0d1117;
-    --light: #f8f9fa;
-    --gray: #8b949e;
-    --bg: #0d1117;
-  }
+  <!-- Header Banner -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Mahedere%20Gezaheng&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Full%20Stack%20Developer%20%E2%80%94%20Ethiopia%20%F0%9F%87%AA%F0%9F%87%B9&descSize=16&descAlignY=55&descColor=aaaaaa" width="100%" alt="Header Banner"/>
   
-  body {
-    font-family: 'Inter', sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: #e0e0e0;
-    background-color: var(--bg);
-    line-height: 1.6;
-  }
+  <!-- Typing Animation -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=00DC82&center=true&vCenter=true&width=620&lines=Laravel+%C2%B7+React+%C2%B7+Inertia+%E2%80%94+Web+Apps+that+work;Flutter+%C2%B7+Dart+%E2%80%94+Mobile+Apps+that+feel+right;Building+LocalLens+%F0%9F%93%8D+%E2%80%94+geo-discovery+for+real+people;Open+to+collaborate+%E2%86%92+reach+out+anytime" alt="Typing SVG"/>
+  </a>
   
-  h1, h2, h3 {
-    color: #ffffff;
-    font-weight: 600;
-  }
-  
-  h1 {
-    text-align: center;
-    padding: 1.5em 0;
-    border-bottom: 2px solid var(--dark);
-  }
-  
-  .badge {
-    border-radius: 20px;
-    padding: 0.5em 1.5em;
-    font-weight: 600;
-    color: var(--light);
-  }
-  
-  .hero {
-    background: linear-gradient(135deg, var(--dark), #1a1a1a);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    margin: 20px 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  }
-  
-  .hero-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 15px;
-    margin: 15px 0;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  
-  .stats {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 25px 0;
-  }
-  
-  .stats a {
-    text-decoration: none;
-    color: #00dc82;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: all 0.3s;
-  }
-  
-  .stats a:hover {
-    background: rgba(0, 220, 130, 0.2);
-    transform: translateY(-2px);
-  }
-  
-  .section {
-    margin: 35px 0;
-    border-radius: 15px;
-    padding: 25px;
-    background: rgba(10, 17, 23, 0.7);
-  }
-  
-  .section h2 {
-    color: var(--secondary);
-    margin-bottom: 15px;
-  }
-  
-  .divider {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px 0;
-  }
-  
-  .tech-stack {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-  }
-  
-  .tech-card {
-    background: rgba(0, 220, 130, 0.15);
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .tech-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .tech-card img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 25px 0;
-  }
-  
-  .project img {
-    border-radius: 15px;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  
-  .project-details {
-    background: rgba(10, 17, 23, 0.7);
-    border-radius: 15px;
-    padding: 20px;
-  }
-    .project-details h3 {
-    color: var(--secondary);
-    margin-top: 0;
-  }
-  
-  .badge-accent {
-    background: var(--accent);
-    color: #0d1117;
-  }
-  
-  .snake-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-  }
-  
-  .snake {
-    width: 350px;
-    height: 150px;
-  }
-    .trophy-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 25px 0;
-  }
-  
-  .trophy {
-    width: 120px;
-    height: 120px;
-  }
-  
-  @media (max-width: 768px) {
-    .project {
-      grid-template-columns: 1fr;
-    }
-    
-    .tech-stack {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-    
-    .stats {
-      flex-direction: column;
-    }
-  }
-</style>
-</head>
-<body>
-  <div class="hero">
-    <h1>Mahedere Gezahegn</h1>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Full%20Stack%20Developer%20%E2%80%94%20Ethiopia%20%F0%9F%87%AA%F0%9F%87%B9&fontSize=48&fontColor=fff&animation=twinkling" alt="Hero Banner">
-    <p style="color: #aaa;">Building real-world solutions for communities • Full Stack Developer • Geo-Discovery Specialist</p>
+  <!-- Profile Badges -->
+  <div align="center" style="margin-top: 20px;">
+    <a href="https://github.com/mahederegezahegn">
+      <img src="https://komarev.com/ghpvc/?username=mahederegezahegn&style=for-the-badge&color=00dc82&label=👁️%20Profile%20Views" alt="Profile Views"/>
+    </a>
+    <a href="https://github.com/mahederegezahegn?tab=followers">
+      <img src="https://img.shields.io/github/followers/mahederegezahegn?style=for-the-badge&color=00b8ff&label=👥%20Followers&logo=github" alt="Followers"/>
+    </a>
+    <a href="mailto:mahederegezaheng@gmail.com">
+      <img src="https://img.shields.io/badge/📧%20Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    </a>
+    <a href="mailto:mahederegezaheng@gmail.com">
+      <img src="https://img.shields.io/badge/💼%20Open%20to%20Work-00dc82?style=for-the-badge" alt="Open to Work"/>
+    </a>
   </div>
   
-  <div class="stats">
-    <a href="https://github.com/mahederegezahegn"><span class="badge">GitHub</span></a>
-    <a href="https://linkedin.com/in/mahederegezahegn"><span class="badge">LinkedIn</span></a>
-    <a href="mailto:mahederegezaheng@gmail.com"><span class="badge" style="background: #D14836;">Email</span></a>
-  </div>
+</div>
 
-  <div class="section">
-    <h2>👨‍💻 About Me</h2>
-    <p>I'm a Full Stack Developer from Addis Ababa, Ethiopia 🇪🇹 with 6+ years of experience building web and mobile applications — from solo client projects to collaborative enterprise systems.</p>
-    
-    <p>I care about <strong>clean architecture</strong>, <strong>great UX</strong>, and <strong>shipping products that actually work</strong>. My focus is on creating technology that serves real human needs.</p>
-    
-    <p><strong>What I'm focused on right now:</strong></p>
-    <ul style="padding-left: 20px; color: #aaa;">
-      <li>🏗️ Building <strong>LocalLens</strong> — a geo-discovery platform for real communities</li>
-      <li>📱 Deepening Flutter animation & state management skills</li>
-      <li>🌍 Exploring geospatial tech: PostGIS, Leaflet, MapLibre</li>
-    </ul>
-    
-    <p>I'm comfortable with the full lifecycle: <code>requirements → design → build → deploy → maintain</code></p>
-    
-    <p><strong>Fun fact:</strong> I've delivered 6+ client projects end-to-end, across healthcare, HR, CRM and mobile — all while building side projects in my own time.</p>
-  </div>
+---
 
-  <div class="section">
-    <h2>🛠 Tech Stack</h2>
-    <div class="tech-stack">
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php" alt="PHP">
-        <div>Backend</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart" alt="Dart">
-        <div>Mobile</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel" alt="Laravel">
-        <div>Framework</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react" alt="React">
-        <div>Frontend</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss" alt="Tailwind">
-        <div>UI</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/PostGIS-4169E1?style=flat&logo=postgresql" alt="PostGIS">
-        <div>Database</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker" alt="Docker">
-        <div>DevOps</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma" alt="Figma">
-        <div>Design</div>
-      </div>
-      <div class="tech-card">
-        <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode" alt="VS Code">
-        <div>Tools</div>
-      </div>
-    </div>
-  </div>
+## 👨‍💻 About Me
 
-  <div class="section">
-    <h2>🚀 Featured Work</h2>
-    
-    <div class="project">
-      <div>
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=local-lens&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="LocalLens">
-      </div>
-      <div class="project-details">
-        <h3>LocalLens <span class="badge">Active</span></h3>
-        <p>A community-powered geo-discovery platform that connects real people with meaningful local spots. No algorithms, just authentic connections.</p>
-        
-        <div class="stats">
-          <div>🗺️ 500+ spots</div>
-          <div>📊 15K+ views</div>
-          <div>👥 200+ users</div>
-        </div>
-        
-        <p><strong>Stack:</strong> Laravel · React · Inertia.js · Tailwind · MySQL · PostGIS · Leaflet Maps</p>
-        <a href="https://github.com/mahederegezahegn/local-lens" style="display: inline-block; margin-top: 10px; color: white; background: var(--primary); padding: 8px 15px; border-radius: 20px; text-decoration: none;">View Project</a>
-      </div>
-    </div>
+<div align="right" style="margin-left: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahederegezahegn&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&text_color=8b949e&langs_count=8&hide=blade" width="42%" alt="Top Languages"/>
+</div>
 
-    <div class="project">
-      <div>
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=flutter-book-app&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="Flutter Book App">
-      </div>
-      <div class="project-details">
-        <h3>Flutter Book App</h3>
-        <p>Offline-first reading tracker with real-time sync via Firebase and Google OAuth authentication.</p>
-        
-        <div class="stats">
-          <div>⚡ Offline-first architecture</div>
-          <div>🔐 Google Auth</div>
-          <div>📱 100+ downloads</div>
-        </div>
-        
-        <p><strong>Stack:</strong> Flutter · Firebase · Google Auth</p>
-        <a href="https://github.com/mahederegezahegn/flutter-book-app" style="display: inline-block; margin-top: 10px; color: white; background: var(--primary); padding: 8px 15px; border-radius: 20px; text-decoration: none;">View Project</a>
-      </div>
-    </div>
-  </div>
+**Full Stack Developer** from **Addis Ababa, Ethiopia** 🇪🇹 with **6+ years** of experience building web and mobile applications — from solo client projects to collaborative enterprise systems.
 
-  <div class="section">
-    <h2>📂 Public Repositories</h2>
-    <p>Explore my work in the [GitHub repositories page](https://github.com/mahederegezahegn?tab=repositories&sort=updated).</p>
-    
-    <p><strong>🔥 Pin your top repos here</strong> (replace "repo-name" with actual repo names):</p>
-    <div class="trophy-container">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=repo1&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="Repo 1" class="trophy">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=repo2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="Repo 2" class="trophy">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=repo3&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="Repo 3" class="trophy">
-    </div>
-  </div>
+I care about **clean architecture**, **great UX**, and **shipping products that actually work**.
 
-  <div class="section">
-    <h2>🐍 GitHub Snake Animation</h2>
-    <p>Check out my dynamic GitHub contribution graph:</p>
-    
-    <div class="snake-container">
-      <img src="https://github.com/mahederegezahegn/mahederegezahegn/raw/output/github-contribution-grid-snake.svg" alt="Light Mode Snake" class="snake">
-      <img src="https://github.com/mahederegezahegn/mahederegezahegn/raw/output/github-contribution-grid-snake-dark.svg" alt="Dark Mode Snake" class="snake">
-    </div>
-    <p style="color: #aaa; font-size: 0.9em;">The snake updates every 12 hours automatically. [Workflow](https://github.com/mahederegezahegn/.github/actions/snake)</p>
-  </div>
+### 🎯 Current Focus
+- 🏗️ Building **LocalLens** — a geo-discovery platform for real communities
+- 📱 Deepening Flutter animation & state management skills
+- 🌍 Exploring geospatial tech: PostGIS, Leaflet, MapLibre
 
-  <div class="section">
-    <h2>📊 GitHub Journey</h2>
-    <div class="stats">
-      <div>⚡ 1800+ commits</div>
-      <div>📈 3.5 avg streak</div>
-      <div>💪 100% contribution streak</div>
-    </div>
-    
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <img src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e&rank_icon=percentile" alt="GitHub Stats">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahederegezahegn&theme=tokyonight&hide_border=true&background=0d1117&ring=00dc82&fire=00b8ff&currStreakLabel=00dc82&sideLabels=8b949e&dates=8b949e" alt="Streak">
-    </div>
-    
-    <div class="trophy-container">
-      <img src="https://github-profile-trophy.vercel.app/?username=mahederegezahegn&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" alt="Trophies" class="trophy">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahederegezahegn&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00dc82&line=00b8ff&point=7c3aed&area=true&area_color=00dc8215" alt="Activity Graph" class="trophy">
-    </div>
-  </div>
+### 🔄 Full Lifecycle Comfort
+```markdown
+requirements → design → build → deploy → maintain
+💡 Fun Fact
+I've delivered 6+ client projects end-to-end, across healthcare, HR, CRM and mobile — all while building side projects in my own time.
 
-  <div class="section">
-    <h2>💡 Skill Levels</h2>
-    <p>My expertise levels across different technologies:</p>
-    
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <div style="flex: 1 1 250px; background: rgba(0, 220, 130, 0.15); border-radius: 10px; padding: 15px; text-align: center;">
-        <div style="font-size: 1.2em; color: var(--primary); margin-bottom: 5px;">90%</div>
-        Laravel / PHP
-      </div>
-      <div style="flex: 1 1 250px; background: rgba(97, 218, 251, 0.15); border-radius: 10px; padding: 15px; text-align: center;">
-        <div style="font-size: 1.2em; color: var(--secondary); margin-bottom: 5px;">87%</div>
-        React / Inertia.js
-      </div>
-      <div style="flex: 1 1 250px; background: rgba(2, 86, 155, 0.15); border-radius: 10px; padding: 15px; text-align: center;">
-        <div style="font-size: 1.2em; color: #02569B; margin-bottom: 5px;">84%</div>
-        Flutter / Dart      </div>
-    </div>
-  </div>
+<br clear="right"/>
+🛠️ Tech Stack
+Category	Technologies
+💻 Languages	PHPDartJavaScriptTypeScriptHTML5CSS3
+⚙️ Backend	LaravelREST APIsMySQLPostgreSQLRedisFirebase
+🎨 Frontend	ReactInertia.jsTailwindCSSLivewireAlpine.js
+📱 Mobile	FlutterFirebaseGoogle Auth
+🔧 Tools	GitDockerPostmanLinuxFigmaVS Code
+🚀 Featured Projects
+📍 LocalLens — Active Flagship Project
+A community-powered geo-discovery platform. Real spots. Real people. No algorithm fluff.
 
-  <div class="section" style="text-align: center; padding: 30px 0;">
-    <p>I'm always open to interesting projects, freelance work, or just a good tech conversation.</p>
-    
-    <a href="mailto:mahederegezaheng@gmail.com" style="display: inline-block; margin: 10px; color: white; background: var(--primary); padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: 600;">Email Me</a>
-    
-    <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center;">
-      <a href="https://github.com/mahederegezahegn" style="display: flex; align-items: center; gap: 8px; color: white; text-decoration: none;">
-        <img src="https://simpleicons.org/icons/github.svg" width="20" alt="GitHub">
-        GitHub
-      </a>
-      <a href="https://linkedin.com/in/mahederegezahegn" style="display: flex; align-items: center; gap: 8px; color: white; text-decoration: none;">
-        <img src="https://simpleicons.org/icons/linkedin.svg" width="20" alt="LinkedIn">
-        LinkedIn
-      </a>
-    </div>
-  </div>
+🎯 Feature	📋 Details
+🗺️ Live Map	Interactive Leaflet map with geo-tagged community posts
+📸 Geo Posts	Upload photos pinned to real locations
+🔥 Trending	Discover what's hot near you right now
+👤 Profiles	Follow locals, build your map footprint
+🏷️ Categories	Food · Urban · Sunset · Wildlife · Culture · +more
+📊 Traction	500+ spots · 15K+ views · 200+ users (organic)
+🛠️ Tech Stack: Laravel React Inertia.js Tailwind MySQL PostGIS Leaflet Maps
 
-  <div class="hero">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%">
-  </div>
-</body>
-</html>
+📱 Mobile Apps (Flutter)
+Personal Project	Client Project
+📚 Book App — Personal<br>• Reading tracker & library manager<br>• Real-time sync via Firebase/Firestore<br>• Google OAuth authentication<br>• Offline-first architecture<br><br>Flutter · Firebase · Google Auth	📚 Book App — Client<br>• Commissioned client project<br>• Laravel REST API backend<br>• Integrated payment gateway<br>• Admin dashboard + analytics<br><br>Flutter · Laravel · Payment API
+💼 Client & Enterprise Systems
+View App	CRM System	Employee Evaluation	Dental Clinic
+Custom business application built end-to-end for a client<br>Laravel React	Customer relationship management — contacts, pipeline, history<br>Laravel MySQL JS	KPI tracking, review cycles, performance scoring<br>Laravel PHP	Patient records, scheduling, clinic operations (team project)<br>Laravel MySQL
+📂 Public Repositories
+<div align="center"> <!-- Pinned Repository --> <a href="https://github.com/mahederegezahegn?tab=repositories"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=mahederegezahegn&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e" alt="Pinned Repo"/> </a> <!-- Browse All Repositories -->
+👉 Browse All Repositories →
+<details> <summary><b>📌 How to pin your top repos</b></summary> <br/> <p>Replace <code>REPO_NAME</code> with your actual repository names:</p> <pre> [![Repo](https://github-readme-stats.vercel.app/api/pin/?username=mahederegezahegn&repo=REPO_NAME&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e)](https://github.com/mahederegezahegn/REPO_NAME) </pre> </details></div>
+🗓️ My Journey
+Year	Milestone	Stack
+2019	🌱 Started web development — first steps into the craft	HTML CSS JavaScript
+2020	⚡ Discovered PHP and fell in love with Laravel — built my first real backend	PHP Laravel MySQL
+2021	📱 Built first Flutter mobile app. Integrated Firebase and Google Auth — mobile dev clicked	Flutter Dart Firebase
+2022	💼 Delivered first paid client project (Book App with payments). Built CRM + Employee Evaluation platforms	Flutter Laravel Payment API
+2023	🤝 Collaborated on Dental Clinic Management System. Deepened React + Inertia.js expertise	React Inertia.js Laravel
+2024	🔗 Delivered View App for client. Explored PostGIS and geospatial data for the first time	Laravel PostGIS Leaflet
+2025	🔥 Launched LocalLens — community geo-discovery platform. 500+ spots · 15K+ views · 200+ users	React Laravel PostGIS Maps
+Now →	🚀 Scaling LocalLens · Open to exciting collaborations · Always learning	🌍 Let's build something
+📊 GitHub Analytics
+<div align="center"> <!-- GitHub Stats & Streak --> <img height="180" src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00b8ff&text_color=8b949e&rank_icon=percentile" alt="GitHub Stats"/> &nbsp;&nbsp; <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=mahederegezahegn&theme=tokyonight&hide_border=true&background=0d1117&ring=00dc82&fire=00b8ff&currStreakLabel=00dc82&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak"/> <!-- GitHub Trophies --> <img src="https://github-profile-trophy.vercel.app/?username=mahederegezahegn&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="GitHub Trophies"/> <!-- Activity Graph --> <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahederegezahegn&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00dc82&line=00b8ff&point=7c3aed&area=true&area_color=00dc8215" width="100%" alt="Activity Graph"/></div>
+💡 Skill Levels
+text
+
+Laravel / PHP          ████████████████████░░  90%  Expert
+React / Inertia.js     ███████████████████░░░  87%  Advanced
+Flutter / Dart         ██████████████████░░░░  84%  Advanced
+MySQL / PostgreSQL     █████████████████░░░░░  80%  Advanced
+JavaScript / TS        ████████████████░░░░░░  76%  Proficient
+Firebase / Auth        ███████████████░░░░░░░  72%  Proficient
+Docker / DevOps        ████████████░░░░░░░░░░  60%  Comfortable
+UI/UX & Figma          █████████████░░░░░░░░░  63%  Comfortable
+📬 Get In Touch
+<div align="center"> <p>I'm always open to interesting projects, freelance work, or just a good tech conversation.</p> <!-- Contact Buttons --> <a href="mailto:mahederegezaheng@gmail.com"> <img src="https://img.shields.io/badge/📧%20Email%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"/> </a>
+<br/><br/>
+
+<!-- GitHub Links --> <a href="https://github.com/mahederegezahegn"> <img src="https://img.shields.io/badge/GitHub%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/> </a> &nbsp; <a href="https://github.com/mahederegezahegn?tab=repositories"> <img src="https://img.shields.io/badge/📂%20Browse%20Repos-00dc82?style=for-the-badge&logo=github&logoColor=white" alt="Browse Repositories"/> </a></div>
+<div align="center"> <!-- Footer Banner --> <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
+<sub>Built with ❤️ in Addis Ababa · Always shipping · Always learning</sub>
+
+</div>
