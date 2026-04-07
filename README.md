@@ -85,9 +85,9 @@ I architect high-performance digital environments. My core philosophy is that co
 ---
 
 ## 🧊 GitHub Contributions 3D Rendering
-
+<!-- Note: This image will load once the GitHub Action has successfully run -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mahederegezahegn/mahederegezahegn/output/profile-3d-contrib/profile-night-green.svg" alt="3D Contributions Graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/mahederegezahegn/mahederegezahegn/output/profile-night-green.svg" alt="3D Contributions Graph" width="100%" />
 </p>
 
 ---
@@ -95,7 +95,7 @@ I architect high-performance digital environments. My core philosophy is that co
 ## 🏆 GitHub Achievement Trophy Room
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mahederegezahegn&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=mahederegezahegn&theme=tokyonight&no-frame=true&column=7" width="100%" alt="Trophy Room"/>
 </div>
 
 ---
@@ -127,13 +127,13 @@ I architect high-performance digital environments. My core philosophy is that co
 ## 📊 Analytics Deep Dive
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00dc82&icon_color=00ff99&text_color=8b949e&rank_icon=percentile" width="48%" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahederegezahegn&layout=donut&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00dc82&text_color=8b949e&langs_count=8&hide=blade" width="48%" alt="Top Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=mahederegezahegn&show_icons=true&theme=tokyonight&count_private=true&title_color=00dc82&icon_color=00ff99&text_color=8b949e&rank_icon=percentile" width="48%" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahederegezahegn&layout=donut&theme=tokyonight&title_color=00dc82&text_color=8b949e&langs_count=8&hide=blade" width="48%" alt="Top Languages"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahederegezahegn&theme=tokyonight&hide_border=true&background=0d1117&ring=00dc82&fire=00ff99&currStreakLabel=00dc82&sideLabels=8b949e&dates=8b949e" width="48%" alt="GitHub Streak"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahederegezahegn&theme=tokyo-night&hide_border=true&bg_color=010409&color=00dc82&line=00ff99&point=ffffff&area=true&area_color=00dc8215" width="48%" alt="Activity Graph"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahederegezahegn&theme=tokyonight&background=0d1117&ring=00dc82&fire=00ff99&currStreakLabel=00dc82&sideLabels=8b949e&dates=8b949e" width="48%" alt="GitHub Streak"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahederegezahegn&theme=tokyo-night&bg_color=010409&color=00dc82&line=00ff99&point=ffffff&area=true&area_color=00dc8215" width="48%" alt="Activity Graph"/>
 </div>
 
 ### 🐍 Contribution Vector (Daily Update)
