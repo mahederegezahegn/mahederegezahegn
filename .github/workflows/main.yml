@@ -1,31 +1,55 @@
-name: Generate GitHub Snake Animation
+name: 🐍 Generate GitHub Snake Animation
+
 on:
+  # Run automatically every day at 00:00 UTC
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
-  workflow_dispatch: # Allows manual trigger
+    - cron: "0 0 * * *"
+  
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+  
+  # Run on pushes to main branch
   push:
     branches: [ main ]
-    
+
+# Prevent multiple concurrent runs
+concurrency:
+  group: snake-animation
+  cancel-in-progress: false
+
 jobs:
   generate:
-    name: Generate Snake SVG
+    name: 🎨 Generate Snake SVG
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    
     permissions:
-      contents: write
+      contents: write  # Required to push to output branch
+    
     steps:
-      - name: Generate Snake Animation SVGs
+      # Step 1: Generate Snake Animation SVGs
+      - name: 🐍 Generate Snake Animation
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
+      
+      # Step 2: Deploy to output branch
+      - name: 🚀 Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "🤖 Update snake animation [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 3: Add workflow summary
+      - name: ✅ Update Summary
+        run: |
+          echo "## 🐍 Snake Animation Updated!" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Successfully generated and deployed snake animation" >> $GITHUB_STEP_SUMMARY
+          echo "📍 Branch: output" >> $GITHUB_STEP_SUMMARY
+          echo "🕐 Generated at: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
