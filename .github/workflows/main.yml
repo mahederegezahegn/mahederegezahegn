@@ -1,6 +1,6 @@
-name: Generate GitHub Contribution Animation
+name: Generate GitHub Assets
 
-# Description: This workflow generates a snake animation based on GitHub contribution history.
+# Description: This workflow generates a snake animation and a 3D contribution graph.
 # It runs automatically every 12 hours and on push to the main branch.
 
 on:
@@ -17,16 +17,16 @@ on:
       - main
 
 jobs:
-  update-contribution-snake:
-    name: Build & Deploy Snake Animation
+  build-assets:
+    name: Build & Deploy Profile Assets
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     
     permissions:
       contents: write
     
     steps:
-      # Step 1: Checkout the repository to access the file system
+      # Step 1: Checkout the repository
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -43,13 +43,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: Publish the generated artifacts to the 'output' branch
+      # Step 3: Generate 3D Contribution Graph
+      - name: 🧊 Generate 3D Contribution Graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # Step 4: Move 3D assets to dist folder
+      - name: 📂 Organize Assets
+        run: |
+          mkdir -p dist
+          mv profile-3d-contrib/*.svg dist/ || true
+
+      # Step 5: Publish the generated artifacts to the 'output' branch
       - name: 🚀 Deploy to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
           publish_branch: output
-          commit_message: "Update contribution animation [skip ci]"
+          commit_message: "Update graphics assets [skip ci]"
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
